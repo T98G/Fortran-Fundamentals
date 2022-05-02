@@ -1,9 +1,11 @@
 program pyramid
   implicit none
-  integer :: i, j
+  integer :: i, j, k
 
+  print "(a16i5)", "Enter a number : "
+  read *, k
 
-  DO i = 1, 10
+  DO i = 1, k + 1
 
     DO j = 1, i
       if(j < i) then
